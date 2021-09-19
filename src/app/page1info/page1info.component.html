@@ -1,0 +1,7 @@
+<div>
+    <h1>{{ pageString }}</h1>   
+    <h6 *ngIf="status"> {{ i }}</h6>
+    <input type='text' class='form-control' (input)="onUpdateStuff($event)"/>
+    <button class='btn btn-primary' (click)="onCreateInfo()"
+    [disabled] = 'clickable' [ngStyle]="{backgroundColor: getColor()}">See Seconds</button>
+</div>

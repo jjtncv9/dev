@@ -1,0 +1,46 @@
+div {
+    height: 270px;
+    width: 220px;
+    display: flex;
+    float: left;
+    margin-left: 200px;
+    margin-top: 130px;
+    margin-right: 105px;
+    background: rgba(71, 71, 128, .2);
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: Optima, sans-serif;
+    box-shadow: 0px 5px 25px rgb(41, 39, 39);
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    margin-top: 200px;
+    background-color: red;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+button:disabled:hover {
+     background-color:grey;
+}
+
+input {
+    position: absolute;
+    margin-top:100px;
+    width: 150px;
+    height: 40px;
+}
+
+h6 {
+    position: absolute;
+    float: right;
+    margin-bottom: 30px;
+}
+
