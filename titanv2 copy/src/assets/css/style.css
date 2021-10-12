@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f5f9;
+}
+
+.cus_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 30px 0px 20px;
+	border-radius: 5px;
+  padding: 100px 40px 40px;
+  position: relative;
+}
+
+.cus_container .heading {
+  position: absolute;
+	width: 230px;
+	height: 75px;
+	color: #fff;
+	font-size: 1rem;
+  font-family: Roboto;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  top: -40px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.probe_clr {
+	background-color: #fc930a !important
+}
+
+.detector_clr {
+	background-color: #e73e3a !important
+}
+
+.incidents_clr {
+	background-color: #4caf50 !important
+}
+
+.waze_incidents_clr {
+	background-color: #07b1c6 !important
+}
+
+.waze_jam_clr {
+	background-color: #dd2366 !important
+}
+
+
+.timing {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.timing .dates {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+.timing .dates:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+}
+
+.timing .dates span {
+  margin-right: 50px;
+}
+
+.checkboxes,
+.travel-time,
+.aggregation-interval,
+.file-name {
+  margin-bottom: 50px;
+}
+
+.checkboxes p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  text-align: center;
+}
+
+.checkbox-group {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row !important;
+}
+
+.checkbox-group label {
+  flex: 1 !important;
+}
+
+.w-100 {
+	width:100%;
+}
+
+.nav-item {
+	padding-left:10px;
+}
+
+.checkbox-group label .Mui-checked {
+  color: #e79742 !important;
+}
+
+.checkbox-group label span.MuiTypography-root {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+  width: 100%;
+}
+
+.travel-time div,
+.aggregation-interval div,
+.file-name div {
+  display: flex;
+}
+
+.file-name input {
+  color: #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+.button {
+  margin: 0 auto;
+}
+
+.button button {
+  background-color: #e79742;
+  color: #fff;
+}
+
+.button button:hover {
+  background-color: #e79742;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .cus_container {
+    padding-top: 70px;
+  }
+
+	.cus_container .heading {
+		left: 70px;
+  }
+
+  .timing,
+  .checkbox-group {
+    flex-direction: column !important;
+  }
+
+  .timing .dates:first-child {
+    margin-bottom: 30px;
+  }
+
+  .timing .dates {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .timing .dates span {
+    margin-right: 0;
+  }
+}
